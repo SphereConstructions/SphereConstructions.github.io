@@ -7,281 +7,314 @@
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
   <link rel="stylesheet" href="acg_sphereconstructions.css">
   <style>
-    body {font-family: "Open Sans",
+    /* To create a smooth scroll effect*/
+    html {scroll-behavior: smooth;}
+
+    /* The gold underline for section titles*/
+    hr.goldline {border: 5px solid gold; width:10%}
+      body {font-family: "Roboto",
       Arial, sans-serif;
+      background-image: url("backgroundcranes.png");
+      background-repeat: repeat-y;
+      background-attachment: fixed;
+      background-size: cover;
     }
-    h1  {font-family: "Open Sans",
+    /* h1: Section titles*/
+    h1  {font-family: "Roboto",
       Arial, sans-serif;
-      letter-spacing: 20px;
-      font-size:50px;
-      font-weight:100;
+      letter-spacing: 2px;
+      font-size:58px;
+      font-weight:500;
       text-align: center;
     }
-    h2  {font-family: "Open Sans",
+    /* h2: Paragraph titles*/
+    h2  {font-family: "Roboto",
       Arial, sans-serif;
       letter-spacing: 1px;
-      font-size:14px;
-      font-weight:100;
-      text-align: center;
-    }
-    h3 {font-family: "Open Sans",
-      Arial, sans-serif;
       font-size:20px;
+      font-weight:bolder;
+      text-align: left;
+      color: #4f7396;
+    }
+    /* h3: Paragraphn(small)*/
+    h3 {font-family: "Roboto",
+      Arial, sans-serif;
+      font-size:15px;
       font-weight:300;
-      color: steelblue;
+      color: #333333;
+      text-align: left;
+      line-height: 1.5;
+    }
+    /* h4: Small section titles (for stats section)*/
+    h4 {font-family: "Roboto",
+      Arial, sans-serif;
+      letter-spacing: 2px;
+      font-size: 30px;
+      color: #4f7396;
+      font-weight:bolder;
       text-align: center;
     }
-    h4, h5, h6{
-      font-family: "Open Sans", Arial, sans-serif;
-      letter-spacing: 5px;
-    }
-
-
-}
+    /* h5: menu text*/
+    h5 {font-family: "Roboto",
+      Arial, sans-serif;
+      letter-spacing: 2px;
+      font-size: 14px;
+      color: white;
+      font-weight:300;
+      text-align: center;
+      padding:8px 16px;
+      float:left;
+      width:auto;
+      border:none;
+      display:block;
+      outline:0;
+      }
+      /* h6: Paragraphn(medium)*/
+      h6 {font-family: "Roboto",
+        Arial, sans-serif;
+        font-size:17px;
+        font-weight:300;
+        color: #333333;
+        text-align: left;
+        line-height: 1.5;
+      }
   </style>
 </head>
 
 <body>
 <!-- Navbar with logo and menu (sit on top) -->
   <div class="w3-top">
-    <div class="w3-bar w3-light-black " style="letter-spacing:4px;">
+    <div class="w3-bar w3-light-black ">
       <div class="w3-left w3-hide-small w3-hide-medium">
         <img src="images\logoandname.png" alt="Sphere Constructions logo" style="width:300px; max-width:300px;">
       </div>
-      <br>
-      <div class="w3-right w3-hide-small w3-hide-medium">
-        <h2 href="#home" class="w3-bar-item w3-button">HOME</h2>
-        <h2 href="#services" class="w3-bar-item w3-button">SERVICES</h2>
-        <h2 href="#about" class="w3-bar-item w3-button">ABOUT</h2>
-        <h2 href="#projects" class="w3-bar-item w3-button">PROJECTS</h2>
-        <h2 href="#contact" class="w3-bar-item w3-button">CONTACT</h2>
+      <div class="w3-right w3-hide-small w3-hide-medium" style="margin: 20px 0px 0px 0px">
+        <a href="#home" class="w3-bar-item w3-button">HOME</a>
+        <a href="#services" class="w3-bar-item w3-button">SERVICES</a>
+        <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#projects" class="w3-bar-item w3-button">PROJECTS</a>
+        <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
       </div>
     </div>
   </div>
 
-<!-- HOME section - Header with image and title -->
-  <div class="row">
-      <img src="images\cranes.png" alt="Cranes">
-      <div class="w3-jumbo" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);color: white">
-        LEADERS IN QUALITY CONSTRUCTION AND INFRASTRUCTURE
-      </div>
+<!-- HOME section - Header with image and title-->
+  <div class="row" id="home">
   </div>
+  <h1 style="margin: 200px 20px 20px 200px; color: white; height:400px; width: 800px;" >
+    LEADERS IN QUALITY CONSTRUCTION AND INFRASTRUCTURE
+  </h1>
 
 <!-- SERVICES section -->
-  <div class="w3-display-container w3-white" style="height:100px; " id="services">
-    <div class="w3-jumbo" style="position: absolute; top: 25%; left: 30%; color: white; left: 30%; color: black; border-bottom: 10px solid gold">
+  <div class="w3-display-container w3-white" style="height:900px; " id="services">
+    <div class="w3-display-container w3-white" style="height:50px;">
+    </div>
+    <h1 style="color: black;">
       SERVICES
-    </div>
-  </div>
-  <div class="row">
-    <br> <br> <br>
-    <div class="column-five" style="background:white">
-    </div>
-    <div class="column-five" style="background:whitesmoke">
-      <img src="images\map.png" alt="Blueprint" style="width:300px; max-width:300px">
-      <h3> Preconstruction Planning </h3>
-      <div style= "font-size:16px; line-height: 1.5">
-        <p> Effective pre-construction services and planning is the cornerstone of a
-          successful construction project. The Pioneer Approach to pre-construction is
-          to serve both the Owner and Architect as a reliable source of current, complete,
-          and accurate information. This enables the project team to make informed and
-          well-grounded decisions relating to the balance of schedule, cost, and quality
-          while considering not only the initial investment, but also the Life Cycle Cost implications.
-        </p>
+      <hr class="goldline" >
+    </h1>
+    <div class="row" style="margin: 50px 1px 1px 1px">
+      <div class="column-ten w3-white" style=" max-width:400px; margin: 50px 15px">
       </div>
-    </div>
-    <div class="column-forty" style="background:white">
-    </div>
-    <div class="column-five" style="background:whitesmoke">
-      <img src="images\model.png" alt="Scale model" style="width:300px; max-width:300px">
-      <h3> Architectural Modelling </h3>
-      <div style= "font-size:16px; line-height: 1.5;">
-        <p> The role of architectural model making in the architectural design process
-          is irreplaceable. At present, architectural model is not only a presentation
-          tool in the architect’s toolbox, but also a creative product for everyone.
-          Make an architectural model of the new house you just purchased,
-          or the interior space the dream house you’ve recently designed.
-        </p>
+      <div class="column-four" style="background:whitesmoke; ">
+        <img src="images\map.png" alt="Blueprint" style="width:300px; ">
+        <h2> Preconstruction Planning </h2>
+          <h3> Effective pre-construction services and planning is the cornerstone of a
+            successful construction project. The Pioneer Approach to pre-construction is
+            to serve both the Owner and Architect as a reliable source of current, complete,
+            and accurate information. This enables the project team to make informed and
+            well-grounded decisions relating to the balance of schedule, cost, and quality
+            while considering not only the initial investment, but also the Life Cycle Cost implications.
+          </h3>
       </div>
-    </div>
-    <div class="column-forty" style="background:white">
-    </div>
-    <div class="column-five" style="background:whitesmoke">
-      <img src="images\topdown.png" alt="Top down" style="width:300px; max-width:300px">
-      <h3> Construction Management </h3>
-      <div style= "font-size:16px; line-height: 1.5;">
-        <p> Construction Management is the planning, coordinating, and building of
+      <div class="column-forty" style="background:white">
+      </div>
+      <div class="column-four" style="background:whitesmoke">
+        <img src="images\model.png" alt="Scale model" style="width:300px;">
+        <h2> Architectural Modelling </h2>
+          <h3> The role of architectural model making in the architectural design process
+            is irreplaceable. At present, architectural model is not only a presentation
+            tool in the architect’s toolbox, but also a creative product for everyone.
+            Make an architectural model of the new house you just purchased,
+            or the interior space the dream house you’ve recently designed.
+            <br> <br> <br> <br>
+          </h3>
+      </div>
+      <div class="column-forty" style="background:white">
+      </div>
+      <div class="column-four" style="background:whitesmoke">
+        <img src="images\topdown.png" alt="Top down" style="width:300px;">
+        <h2> Construction Management </h2>
+          <h3> Construction Management is the planning, coordinating, and building of
           a project from conception to completion. This specialization is intended
           for Construction industry professionals, engineers, and architects looking
           to advance their careers. Students interested in learning about construction
           project management would also benefit from this specialization.
-        </p>
+          <br> <br> <br> <br>
+        </h3>
       </div>
     </div>
   </div>
 
 <!-- ABOUT section -->
-  <div class="w3-display-container w3-white" style="height:100px; " id="about">
-    <div class="w3-jumbo" style="position: absolute; top: 25%; left: 30%; color: white; left: 30%; color: black; border-bottom: 10px solid gold">
-      ABOUT
-    </div>
-  </div>
-  <div class="row">
-    <br> <br> <br>
-    <div class="column-five" style="background:white">
-    </div>
-    <div class="column-three" style="background:whitesmoke">
-      <div style= "font-size:16px; line-height: 2">
-        <p>Sphere Constructions is a world-leading construction and building services
-          company that completes in excess of $5 billion worth of contracts annually,
-          in every market sector and across the globe. Over the last 69 years, we’ve
-          grown from being a general contractor to a multi-faceted company that can
-          deliver any aspect of a project. <br> <br> Well known as an expert in “earth moving”, it was no surprise that we found
-          success in site clearing operations. Various locations, including the
-          Antigonish Regional Mall site, the Georgia Pacific Gypsum site in Port Hawkesbury,
-          Louisiana Pacific site at Point Tupper and the Burnside Industrial Park site in Dartmouth,
-          the new Dartmouth Crossing IKEA site, among many others, have all benefited
-          from our competency, skills and meticulous attention to detail.
-        </p>
-      </div>
-    </div>
-    <div>
-      <img src="images\project4curtisisland.png" alt="Builsing site" style="width:300px; max-width:300px">
+  <div class="acg-display-container" style="background-image:url('backgroundcurtisisland.png'); width: 100%; height: auto; background-size: cover;"  id="about">
+    <div class="acg-display-container w3-whitesmoke">
+      <h1 style="color: black; margin: 0px 10px 10px 200px; text-align:left; ">
+        ABOUT
+        <hr class="goldline" style="width:20%; ">
+      </h1>
+      <h6 style= "margin: 0px 10px 10px 200px;width: 450px;height:585px">Sphere Constructions is a world-leading construction and building services
+        company that completes in excess of $5 billion worth of contracts annually,
+        in every market sector and across the globe. Over the last 70 years, we’ve
+        grown from being a general contractor to a multi-faceted company that can
+        deliver any aspect of a project. <br> <br> Well known as an expert in “earth moving”,
+        it was no surprise that we found
+        success in site clearing operations. Various locations, including the
+        Antigonish Regional Mall site, the Georgia Pacific Gypsum site in Port Hawkesbury,
+        Louisiana Pacific site at Point Tupper and the Burnside Industrial Park site in Dartmouth,
+        the new Dartmouth Crossing IKEA site, among many others, have all benefited
+        from our competency, skills and meticulous attention to detail.
+      </h6>
     </div>
   </div>
 
 <!-- OUR SENIOR TEAM section -->
-  <div class="w3-display-container w3-white" style="height:100px; ">
-    <div class="w3-jumbo" style="position: absolute; top: 25%; left: 30%; color: white; left: 30%; color: black; border-bottom: 10px solid gold">
+  <div class="w3-display-container w3-white" style="height:900px; margin: 50px 0px 25px 0px">
+    <div class="w3-display-container w3-white" style="height:50px;">
+    </div>
+    <h1 style="left: 30%; color: black; margin: 25px 0px 25px 0px">
       OUR SENIOR TEAM
-    </div>
-  </div>
-  <div class="row">
-    <br> <br> <br>
-    <div class="column-five" style="background:white">
-    </div>
-    <div class="column-five">
-      <img src="images\robertwilson.png" alt="Robert Wilson" style="width:300px; max-width:300px">
-      <div class="acg-container">
-        <p> Robert Wilson - CEO </p>
+      <hr class="goldline">
+    </h1>
+    <div class="row" >
+      <div class="column-five" style="background:white">
+      </div>
+      <div class="column-five">
+        <img src="images\robertwilson.png" alt="Robert Wilson" style="width:300px; max-width:300px">
+        <div class="acg-container">
+          <h3 style="text-align:center"> Robert Wilson - CEO </h3>
+        </div>
+      </div>
+      <div class="column-forty" style="background:white">
+      </div>
+      <div class="column-five">
+        <img src="images\ericayonce.png" alt="Erica Yoncé" style="width:300px; max-width:300px">
+        <div class="acg-container">
+          <h3 style="text-align:center"> Erica Yoncé - VP Civil Engineering </h3>
+        </div>
+      </div>
+      <div class="column-forty" style="background:white">
+      </div>
+      <div class="column-five">
+        <img src="images\liamalanga.png" alt="Lia Malanga" style="width:300px; max-width:300px">
+        <div class="acg-container">
+          <h3 style="text-align:center"> Lia Malanga - Survey Team Director </h3>
+        </div>
       </div>
     </div>
-    <div class="column-forty" style="background:white">
-    </div>
-    <div class="column-five">
-      <img src="images\ericayonce.png" alt="Erica Yoncé" style="width:300px; max-width:300px">
-      <div class="acg-container">
-        <p> Erica Yoncé - VP Civil Engineering </p>
+    <div class="row">
+      <div class="column-five" style="background:white">
       </div>
-    </div>
-    <div class="column-forty" style="background:white">
-    </div>
-    <div class="column-five">
-      <img src="images\liamalanga.png" alt="Lia Malanga" style="width:300px; max-width:300px">
-      <div class="acg-container">
-        <p> Lia Malanga - Survey Team Director </p>
+      <div class="column-five">
+        <img src="images\bryceplantell.png" alt="Bryce Plantell" style="width:300px; max-width:300px">
+        <div class="acg-container">
+          <h3 style="text-align:center"> Bryce Plantell - Senior Architect </h3>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="row">
-    <br> <br> <br>
-    <div class="column-five" style="background:white">
-    </div>
-    <div class="column-five">
-      <img src="images\bryceplantell.png" alt="Bryce Plantell" style="width:300px; max-width:300px">
-      <div class="acg-container">
-        <p> Bryce Plantell - Senior Architect </p>
+      <div class="column-forty" style="background:white">
       </div>
-    </div>
-    <div class="column-forty" style="background:white">
-    </div>
-    <div class="column-five">
-      <img src="images\liwei.png" alt="Li Wei" style="width:300px; max-width:300px">
-      <div class="acg-container">
-        <p> Li Wei - Civil Engineering </p>
+      <div class="column-five">
+        <img src="images\liwei.png" alt="Li Wei" style="width:300px; max-width:300px">
+        <div class="acg-container">
+          <h3 style="text-align:center"> Li Wei - Civil Engineering </h3>
+        </div>
       </div>
-    </div>
-    <div class="column-forty" style="background:white">
-    </div>
-    <div class="column-five">
-      <img src="images\susansaylor.png" alt="Susan Saylor" style="width:300px; max-width:300px">
-      <div class="acg-container">
-        <p> Susan Saylor - Archeologist </p>
+      <div class="column-forty" style="background:white">
+      </div>
+      <div class="column-five">
+        <img src="images\susansaylor.png" alt="Susan Saylor" style="width:300px; max-width:300px">
+        <div class="acg-container">
+          <h3 style="text-align:center"> Susan Saylor - Archeologist </h3>
+        </div>
       </div>
     </div>
   </div>
 
 <!-- STATS section -->
-  <div class="w3-display-container" style="height:250px; background-color: gold">
-    <div class="w3-jumbo" style="color: midnightblue; ">
-      2012 | 206 | 870 | 26
+  <div class="w3-display-container" style="height:40px;">
+  </div>
+  <div class="w3-display-container" style="height:250px;  background-color: gold; ">
+    <h2 class="w3-jumbo" style="color: steelblue; text-align: center;font-weight:bolder;">
+      2012 </h2>
+    <div class="w3-xlarge" style="color: white; text-align: center; font-weight:lighter">
+      |
     </div>
-    <div class="w3-medium">
-      Year Established  Projects Completed  Contractors Appointed  Awards Won
+    <div style="color: midnightblue; text-align: center;">
+      <h3> Year Established </h3>
     </div>
   </div>
 
 <!-- PROJECTS section -->
-  <div class="w3-display-container w3-white" style="height:100px; " id="projects">
-    <div class="w3-jumbo" style="position: absolute; top: 25%; left: 30%; color: white; left: 30%; color: black; border-bottom: 10px solid gold">
+  <div class="w3-display-container w3-white" style="height:1200px; " id="projects">
+    <div class="w3-display-container" style="height:75px;">
+    </div>
+    <h1 style="left: 30%; color: black;">
       PROJECTS
+      <hr class="goldline">
+    </h1>
+    <div class="row">
+      <br> <br>
+      <div class="column-ten" style="background-color:white">
+      </div>
+      <img src="images\project1keeyask.png" alt="Keeyask" style="width:500px; max-width:500px">
+      <div class="column-ten" style="background-color:white">
+      </div>
+      <img src="images\project2crossrail.png" alt="Cross Rail" style="width:500px; max-width:500px">
     </div>
-  </div>
-  <div class="row">
-    <br> <br> <br>
-    <div class="column-ten" style="background-color:white">
+    <div class="row">
+      <br> <br>
+      <div class="column-ten" style="background-color:white">
+      </div>
+      <img src="images\project3bluegrass.png" alt="Blue Grass" style="width:500px; max-width:500px">
+      <div class="column-ten" style="background-color:white">
+      </div>
+      <img src="images\project4curtisisland.png" alt="Curtis Island" style="width:500px; max-width:500px">
     </div>
-    <img src="images\project1keeyask.png" alt="Keeyask" style="width:500px; max-width:500px">
-    <div class="column-ten" style="background-color:white">
-    </div>
-    <img src="images\project2crossrail.png" alt="Cross Rail" style="width:500px; max-width:500px">
-  </div>
-  <div class="row">
-    <br> <br>
-    <div class="column-ten" style="background-color:white">
-    </div>
-    <img src="images\project3bluegrass.png" alt="Blue Grass" style="width:500px; max-width:500px">
-    <div class="column-ten" style="background-color:white">
-    </div>
-    <img src="images\project4curtisisland.png" alt="Curtis Island" style="width:500px; max-width:500px">
   </div>
 
 <!-- CLIENTS section -->
   <div class="w3-display-container" style="height:200px; background-color: white">
   </div>
-  <div class="w3-display-container" style="height:400px; background-color: whitesmoke">
-    <div class="w3-jumbo" style="position: absolute; top: 10%; left: 50%; color: white; left: 30%; color: black; border-bottom: 10px solid gold">
+  <div class="w3-display-container" style="height:400px; background-color: whitesmoke;">
+    <h1 style="left: 30%; color: black;">
+      <br>
       CLIENTS
-    </div>
-    <div class="row">
-      <br> <br> <br> <br> <br> <br>
-      <div class="column-five" style="background-color:whitesmoke">
-      </div>
+      <hr class="goldline">
       <img src="images\clientlogos.png" alt="Keeyask" >
-      <div class="column-ten" style="background-color:whitesmoke">
-      </div>
-    </div>
+    </h1>
   </div>
-
 
 <!-- CONTACT section -->
-  <div class="w3-display-container w3-white" style="height:200px; ">
-    <div class="w3-jumbo" style="position: absolute; top: 25%; left: 30%; color: white; left: 30%; color: black; border-bottom: 10px solid gold">
-      CONTACT
+  <div class="w3-display-container w3-white" style="height:250px; " id="contact">
+    <div class="w3-display-container" style="height:75px;">
     </div>
+    <h1 style="left: 30%; color: black;">
+      CONTACT
+      <hr class="goldline">
+    </h1>
   </div>
-  <div class="w3-display-container" style="height:400px; background-color: white">
+  <div class="w3-display-container" style="height:300px; background-color: white">
     <div class="column-five" style="background-color:white">
     </div>
     <div style= "font-size:16px; line-height: 1.5; width:2000px;">
       <div class="column-four" style="background-color:white;">
-        <h3 style="text-align: left"> Inquiries </h3>
+        <h2> Inquiries </h2>
         <p style="max-width: 425px"> For any inquiries, questions or commendations,
         email contact@sphereconstructions.com or fill out the following form.
         </p>
       </div>
       <div class="column-four" style="background-color:white">
-        <h3 style="text-align: left;"> Employment </h3>
+        <h2> Employment </h2>
         <p style="max-width: 350px"> To apply for a job with Sphere Constuctions,
           please send a cover letter together with your C.V. to contact@sphereconstructions.com
         </p>

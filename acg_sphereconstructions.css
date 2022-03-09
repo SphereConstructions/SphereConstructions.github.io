@@ -70,10 +70,10 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0} */
 .w3-responsive{display:block;overflow-x:auto}
 .w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
 
-.acg-container{text-align: center; padding: 10px 5px; background-color: whitesmoke}
+.acg-container{text-align: left; padding: 10px 5px; background-color: whitesmoke; width: 100%}
 
 .acg-image-30
-  {
+  {display: block;
   width: 30%;
   height: auto;}
 
@@ -189,7 +189,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0} */
 /* ACG change: added a padding to display the DOWNLOAD button below the picture*/
 .w3-padding-download{padding:20px 20px!important}
 .w3-left{float:left!important}.w3-right{float:right!important}
-.w3-button:hover{color:#000!important;background-color:#ccc!important}
+/* acg change for .w3-button:hover{color:#000!important;background-color:#ccc!important} */
+.w3-button:hover{color:#FFD700!important;background-color:#1a1a1a!important}
 .w3-transparent,.w3-hover-none:hover{background-color:transparent!important}
 .w3-hover-none:hover{box-shadow:none!important}
 /* Colors */
